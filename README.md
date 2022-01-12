@@ -5,7 +5,7 @@
 ### Install the app using npx create-react-app
 
 ```bash
-npx create-react-app my-app --template rrp-boilerplate 
+npx create-react-app my-app --template react-redux-pwa-boilerplate
 ```
 
 ### Project Dependencies Which Are Installed So Far.
