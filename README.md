@@ -5,13 +5,13 @@
 ### Install the app using npx create-react-app
 
 ```bash
-npx create-react-app my-app --template react-redux-pwa-boilerplate
+npx create-react-app my-app --template rrp-boilerplate 
 ```
 
 ### Project Dependencies Which Are Installed So Far.
 <pre>
 "dependencies": {
-    "@hookform/resolvers": "^2.8.2",
+    "@hookform/resolvers": "^2.8.8",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -25,6 +25,7 @@ npx create-react-app my-app --template react-redux-pwa-boilerplate
     "react-bootstrap": "^2.0.3",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.27.1",
     "react-icons": "^4.3.1",
     "react-loading": "^2.0.3",
     "react-redux": "^7.2.6",
@@ -33,7 +34,7 @@ npx create-react-app my-app --template react-redux-pwa-boilerplate
     "react-toastify": "^8.0.3",
     "redux": "^4.1.2",
     "redux-persist": "^6.0.0",
-    "uuid": "^8.3.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   }
   <pre>
