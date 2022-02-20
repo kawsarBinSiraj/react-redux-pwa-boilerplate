@@ -1,8 +1,6 @@
 // initialState
 const initialState = {
-	user: {
-		username: 'kawsar bin siraj',
-	},
+	users: [],
 };
 
 // Use the initialState as a default value
@@ -10,9 +8,11 @@ function userReducer(state = initialState, action) {
 	// The reducer normally looks at the action type field to decide what happens
 	switch (action.type) {
 		case 'ADD_USER':
+			let users = state.users;
+			users.push(action.payload);
 			return {
 				...state,
-				user: action.payload,
+				users,
 			};
 
 		default:
