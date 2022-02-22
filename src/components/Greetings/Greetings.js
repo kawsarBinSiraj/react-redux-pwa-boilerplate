@@ -14,21 +14,20 @@ import pwaLogo from '../../assets/img/pwa.png';
  * @validation schema
  * @return  {}
  */
-const schema = yup
-	.object({
-		userId: yup
-			.number('ID should be a number')
-			.positive('Only positive number is allowed!')
-			.integer('Only integer allowed!')
-			.required('The field is required!'),
-		userName: yup.string('Only string allowed').required('The field is required!'),
-	})
+const schema = yup.object({
+	userId: yup
+		.number('ID should be a number')
+		.positive('Only positive number is allowed!')
+		.integer('Only integer allowed!')
+		.required('The field is required!'),
+	userName: yup.string('Only string allowed').required('The field is required!'),
+});
 
 const Greetings = () => {
 	const {
 		register,
 		handleSubmit,
-        reset ,
+		reset,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(schema),
@@ -56,12 +55,20 @@ const Greetings = () => {
 			type: ADD_USER,
 			payload: values,
 		});
-        reset();
+		reset();
 	};
 
 	return (
 		<div id="greetings">
 			<div className="container text-center mt-5">
+				<a href="https://kawsarbinsiraj.github.io/" target="_blank" className="mb-2 d-inline-block">
+					<img
+						src="https://avatars.githubusercontent.com/u/38612699?v=4"
+						style={{ width: '150px', height: '150px' }}
+						alt="img"
+						className="author rounded-circle"
+					/>
+				</a>
 				<div className="logo d-inline-flex align-items-center">
 					<a href="https://reactjs.org/" className="d-inline-block" target="_blank" rel="noreferrer">
 						<img src={rectLogo} alt="React Logo" className="d-inline-block" height={100} />
@@ -94,7 +101,7 @@ const Greetings = () => {
 							Add User
 						</button>
 					</div>
-                    <pre id="json">{JSON.stringify(reduxStore, undefined, 2)}</pre>
+					<pre id="json">{JSON.stringify(reduxStore, undefined, 2)}</pre>
 				</form>
 			</div>
 		</div>
