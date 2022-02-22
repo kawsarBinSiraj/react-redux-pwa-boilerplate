@@ -8,11 +8,11 @@ function userReducer(state = initialState, action) {
 	// The reducer normally looks at the action type field to decide what happens
 	switch (action.type) {
 		case 'ADD_USER':
-			let users = state.users;
-			users.push(action.payload);
+			let u = state.users;
+			u.push(action.payload);
 			return {
 				...state,
-				users,
+				users: u,
 			};
 
 		default:
