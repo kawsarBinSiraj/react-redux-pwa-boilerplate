@@ -1,8 +1,6 @@
 # React + Redux + PWA
 
 ![2022-01-09_15-04-19](https://user-images.githubusercontent.com/38612699/148676059-0165e965-e295-41c1-8017-bc4df8a8d286.png)
-![271931184_1603064643388573_3419320871423071501_n](https://user-images.githubusercontent.com/38612699/155059179-80253df8-84dc-4652-b60b-41fed59dfc8f.jpg)
-
 
 ### Install the app using npx create-react-app
 
