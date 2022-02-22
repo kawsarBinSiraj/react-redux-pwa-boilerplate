@@ -61,14 +61,16 @@ const Greetings = () => {
 	return (
 		<div id="greetings">
 			<div className="container text-center mt-5">
-				<a href="https://kawsarbinsiraj.github.io/" target="_blank" className="mb-2 d-inline-block">
-					<img
-						src="https://avatars.githubusercontent.com/u/38612699?v=4"
-						style={{ width: '150px', height: '150px' }}
-						alt="img"
-						className="author rounded-circle"
-					/>
-				</a>
+				<div className="author-img mb-2">
+					<a href="https://kawsarbinsiraj.github.io/" target="_blank" className="d-inline-block">
+						<img
+							src="https://avatars.githubusercontent.com/u/38612699?v=4"
+							style={{ width: '125px', height: '125px' }}
+							alt="img"
+							className="rounded-circle"
+						/>
+					</a>
+				</div>
 				<div className="logo d-inline-flex align-items-center">
 					<a href="https://reactjs.org/" className="d-inline-block" target="_blank" rel="noreferrer">
 						<img src={rectLogo} alt="React Logo" className="d-inline-block" height={100} />
